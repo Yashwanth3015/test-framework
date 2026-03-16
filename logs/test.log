@@ -1,0 +1,18 @@
+2026-03-13 11:20:58,286 - INFO - test_auth - Opening login page
+2026-03-13 11:21:25,380 - INFO - test_auth - Entering credentials
+2026-03-13 11:21:26,231 - INFO - test_auth - Checking dashboard visibility
+2026-03-13 11:23:11,392 - INFO - test_auth - Opening login page
+2026-03-13 11:23:41,620 - INFO - test_auth - Entering credentials
+2026-03-13 11:23:42,492 - INFO - test_auth - Checking dashboard visibility
+2026-03-13 11:24:44,144 - INFO - test_auth - Opening login page
+2026-03-13 11:25:14,363 - INFO - test_auth - Entering credentials
+2026-03-13 11:25:15,177 - INFO - test_auth - Checking dashboard visibility
+2026-03-13 11:40:57,182 - INFO - test_auth - Opening login page
+2026-03-13 11:41:18,515 - INFO - test_auth - Entering credentials
+2026-03-13 11:41:19,411 - INFO - test_auth - Checking dashboard visibility
+2026-03-15 12:00:12,011 - INFO - test_auth - Opening login page
+2026-03-15 12:00:13,399 - INFO - test_auth - Entering credentials
+2026-03-15 12:00:14,037 - INFO - test_auth - Checking dashboard visibility
+2026-03-15 12:33:24,641 - INFO - test_auth - Opening login page
+2026-03-15 12:33:25,996 - INFO - test_auth - Entering credentials
+2026-03-15 12:33:26,717 - INFO - test_auth - Checking dashboard visibility

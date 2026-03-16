@@ -1,0 +1,41 @@
+2026-03-15 12:46:39,636 | INFO | conftest | TEST PASSED: test_admin_users_page_access
+2026-03-15 12:46:54,479 | INFO | conftest | TEST PASSED: test_alerts_handling
+2026-03-15 12:47:04,173 | INFO | test_auth | Opening login page
+2026-03-15 12:47:05,460 | INFO | test_auth | Entering credentials
+2026-03-15 12:47:06,180 | INFO | test_auth | Checking dashboard visibility
+2026-03-15 12:47:08,857 | INFO | conftest | TEST PASSED: test_valid_admin_login
+2026-03-15 12:47:24,435 | INFO | conftest | TEST PASSED: test_create_project
+2026-03-15 12:47:40,235 | INFO | conftest | TEST PASSED: test_frames_and_windows
+2026-03-15 12:47:52,457 | INFO | conftest | TEST PASSED: test_invalid_login[admin@example.com-wrongpassword]
+2026-03-15 12:48:04,150 | INFO | conftest | TEST PASSED: test_invalid_login[wrongemail-password]
+2026-03-15 12:48:15,510 | INFO | conftest | TEST PASSED: test_invalid_login[-]
+2026-03-15 12:48:27,372 | INFO | conftest | TEST PASSED: test_non_admin_access_restriction
+2026-03-15 12:48:43,056 | INFO | conftest | TEST PASSED: test_task_status_update
+2026-03-15 13:13:42,135 | INFO | conftest | TEST PASSED: test_invalid_login[admin@example.com-wrongpassword]
+2026-03-15 13:13:49,836 | INFO | conftest | TEST PASSED: test_admin_users_page_access
+2026-03-15 13:13:53,131 | INFO | conftest | TEST PASSED: test_alerts_handling
+2026-03-15 13:13:53,666 | INFO | test_auth | Opening login page
+2026-03-15 13:13:54,300 | INFO | test_auth | Entering credentials
+2026-03-15 13:13:55,459 | INFO | conftest | TEST PASSED: test_invalid_login[wrongemail-password]
+2026-03-15 13:13:56,937 | INFO | test_auth | Checking dashboard visibility
+2026-03-15 13:14:00,005 | INFO | conftest | TEST PASSED: test_valid_admin_login
+2026-03-15 13:14:02,663 | INFO | conftest | TEST PASSED: test_invalid_login[-]
+2026-03-15 13:14:11,709 | INFO | conftest | TEST PASSED: test_non_admin_access_restriction
+2026-03-15 13:14:12,948 | INFO | conftest | TEST PASSED: test_create_project
+2026-03-15 13:14:13,464 | INFO | conftest | TEST PASSED: test_frames_and_windows
+2026-03-15 13:14:24,165 | INFO | conftest | TEST PASSED: test_task_status_update
+2026-03-16 10:49:28,780 | ERROR | conftest | TEST FAILED: test_admin_users_page_access
+2026-03-16 10:49:43,305 | ERROR | conftest | TEST FAILED: test_alerts_handling
+2026-03-16 10:49:47,186 | INFO | test_auth | Opening login page
+2026-03-16 10:49:47,351 | INFO | test_auth | Entering credentials
+2026-03-16 10:49:47,586 | INFO | test_auth | Checking dashboard visibility
+2026-03-16 10:49:53,287 | INFO | conftest | TEST PASSED: test_valid_admin_login
+2026-03-16 10:50:06,016 | INFO | conftest | TEST PASSED: test_create_project
+2026-03-16 10:50:16,990 | INFO | conftest | TEST PASSED: test_frames_and_windows
+2026-03-16 10:50:25,096 | INFO | conftest | TEST PASSED: test_invalid_login[admin@example.com-wrongpassword]
+2026-03-16 10:50:33,234 | INFO | conftest | TEST PASSED: test_invalid_login[wrongemail-password]
+2026-03-16 10:50:41,278 | INFO | conftest | TEST PASSED: test_invalid_login[-]
+2026-03-16 10:50:49,302 | INFO | conftest | TEST PASSED: test_non_admin_access_restriction
+2026-03-16 10:51:01,417 | INFO | conftest | TEST PASSED: test_task_status_update
+2026-03-16 10:51:34,171 | INFO | conftest | TEST PASSED: test_admin_users_page_access
+2026-03-16 10:51:55,679 | INFO | conftest | TEST PASSED: test_alerts_handling

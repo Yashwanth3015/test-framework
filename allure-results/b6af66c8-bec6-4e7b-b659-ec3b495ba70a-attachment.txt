@@ -1,0 +1,3 @@
+[32mINFO    [0m test_auth:test_auth.py:9 Opening login page
+[32mINFO    [0m test_auth:test_auth.py:15 Entering credentials
+[32mINFO    [0m test_auth:test_auth.py:19 Checking dashboard visibility
