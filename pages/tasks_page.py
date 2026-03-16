@@ -12,11 +12,11 @@ class TasksPage(BasePage):
     EDIT_TODO_TASK = (
         By.XPATH,
         "(//table//tr//button[contains(text(),'Edit')])[1]"
-    )  
+    )
 
     STATUS_DROPDOWN = (
-    By.XPATH,
-    "//label[text()='Status']/following::select[1]"
+        By.XPATH,
+        "//label[text()='Status']/following::select[1]"
     )
 
     SAVE_TASK_BUTTON = (By.XPATH, "//button[contains(text(),'Save Task')]")
@@ -27,28 +27,36 @@ class TasksPage(BasePage):
     )
 
     def open_tasks(self):
-        self.click(self.TASKS_MENU)
+        WebDriverWait(self.driver, 20).until(
+            EC.element_to_be_clickable(self.TASKS_MENU)
+        ).click()
 
     def edit_first_task(self):
-        self.click(self.EDIT_TODO_TASK)
+        WebDriverWait(self.driver, 20).until(
+            EC.element_to_be_clickable(self.EDIT_TODO_TASK)
+        ).click()
 
     def change_status(self, status):
 
-        dropdown = WebDriverWait(self.driver,10).until(
+        dropdown = WebDriverWait(self.driver, 20).until(
             EC.element_to_be_clickable(self.STATUS_DROPDOWN)
         )
+
         Select(dropdown).select_by_value(status)
 
     def save_task(self):
 
-     WebDriverWait(self.driver,20).until(
-        EC.element_to_be_clickable(self.SAVE_TASK_BUTTON)
-    ).click()
+        WebDriverWait(self.driver, 20).until(
+            EC.element_to_be_clickable(self.SAVE_TASK_BUTTON)
+        ).click()
 
-    # wait until task status updates in table
-    WebDriverWait(self.driver,20).until(
-        EC.visibility_of_element_located(self.STATUS_CELL)
-    )
+        # Wait until the status cell updates
+        WebDriverWait(self.driver, 20).until(
+            EC.visibility_of_element_located(self.STATUS_CELL)
+        )
 
     def get_task_status(self):
-        return self.get_text(self.STATUS_CELL)
+
+        return WebDriverWait(self.driver, 20).until(
+            EC.visibility_of_element_located(self.STATUS_CELL)
+        ).text
