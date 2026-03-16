@@ -4,10 +4,10 @@ pipeline {
     stages {
 
         stage('Clone Code') {
-            steps {
-                git 'https://github.com/Yashwanth3015/test-framework.git'
-            }
-        }
+         steps {
+           git branch: 'main', url: 'https://github.com/Yashwanth3015/test-framework.git'
+    }
+}
 
         stage('Install Dependencies') {
             steps {
