@@ -16,14 +16,14 @@ pipeline {
         }
 
         stage('Run Tests') {
-            steps {
-                bat 'pytest tests'
-            }
-        }
+          steps {
+            bat 'python -m pytest tests'
+    }
+}
 
         stage('Generate Report') {
             steps {
-                bat 'pytest --html=reports/report.html'
+                bat 'python -m pytest --html=reports/report.html'
             }
         }
 
