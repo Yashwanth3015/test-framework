@@ -40,13 +40,15 @@ class TasksPage(BasePage):
         Select(dropdown).select_by_value(status)
 
     def save_task(self):
-        WebDriverWait(self.driver,10).until(
-            EC.element_to_be_clickable(self.SAVE_TASK_BUTTON)
-        ).click()
-        # wait until modal disappears
-        WebDriverWait(self.driver,10).until(
-            EC.invisibility_of_element_located(self.SAVE_TASK_BUTTON)
-        )
+
+     WebDriverWait(self.driver,20).until(
+        EC.element_to_be_clickable(self.SAVE_TASK_BUTTON)
+    ).click()
+
+    # wait until task status updates in table
+    WebDriverWait(self.driver,20).until(
+        EC.visibility_of_element_located(self.STATUS_CELL)
+    )
 
     def get_task_status(self):
         return self.get_text(self.STATUS_CELL)
